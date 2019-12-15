@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Offline Services"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <GridView
+        android:id="@+id/gridView_categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:columnWidth="150dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        tools:listitem="@layout/card_apps" />
+
+</LinearLayout>
